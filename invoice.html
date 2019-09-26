@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>Invoice </title>
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+<style>
+	
+	
+	* { box-sizing:border-box;padding:0; margin:0;}
+	
+	header,footer { width:90%;
+			margin:20px auto;}
+			
+	.innvoice { display:inline-block;
+				width:40%;
+				float:left;
+				padding:15px;}
+	.rightbox { float:right;
+				display:inline-block;
+				width:25%;
+				text-align:right;
+				padding:15px;}
+	.right-text { text-align:right;}
+	.rightborder { border-right:4px solid black;}
+	footer { text-align:right;}
+			 
+	table th,td{
+		border: 1px solid black;
+		border-collapse: collapse;
+		
+		
+	}
+	table{
+		padding-top:150px;
+		clear:both;
+		width: 90%;
+		margin:200px auto;
+		border-collapse:collapse;
+	}
+	
+	#hide{
+		border-left: 1px solid white;
+		border-bottom: 1px solid white;
+		border-right: 1px solid white;
+	}
+	#hide1{
+		border-bottom: 1px solid white;
+		text-align: right;
+		padding-right:10px;
+	
+	}
+	
+	
+</style>
+
+
+</head>
+<body>
+<div id="print-content">
+<form>
+	
+	<header>
+		<div class="innvoice">
+			<h1> Invoice</h1>
+
+			<p><b>Kantech Solution Private Limited</b><br>
+			Ground Floor, Building 2A,2K & 2d <br> AMR Tech Park Internal Rd, Honacondra
+			<br> Bengaluru, Karnataka 5600060 <br> GSTIN 0dARCPD9874312G</p>	
+		</div>
+		
+		<div class="rightbox">
+			<p><b>Vijaya Traders Private Limited </b><br>
+			5/1,Panthouse 01, 6th Flooe, Rich<br>
+			Homes Apartment,Richmond Road<br>
+			Dengaluru Karnataka 560025<br>
+			GSTIN 04ARCPD98743125	</p>
+		</div>
+		<div class="rightbox rightborder right-text">
+			<p><b>Invoice Date</b><br>
+			20/06/2017
+			</p>
+		
+			<p><b> Due Date</b><br>
+			14/07/2017</p>
+			<p><b> Invoice number</b><br>1</p>
+		</div>
+	</header>
+
+	
+	<table>
+		<tr>
+			<th>Description </th>
+			<th>HSN</th>
+			<th> Qty</th>
+			<th> Unit price</th>
+			<th> Tax </th>
+			<th> Amount</th>
+		</tr>
+		<tr>
+			<td>Shampoo</td>
+			<td> 340111111 </td>
+			<td> 10,000</td>
+			<td> 10.00</td>
+			<td> CGST 14% + SGST 14% </td>
+			<td> 1,00,000.00</td>
+		</tr>
+		<tr>
+			<td>Soap</td>
+			<td>340111110</td>
+			<td>5000</td>
+			<td>5.00</td>
+			<td> CGST 9% + SGST 9%</td>
+			<td>25000</td>
+		</tr>
+		<tr>
+		
+			<th colspan="4" id="hide"> </th>
+			<td id="hide1" >sub total</td>
+			<td id="show">1,25,000</td>
+		</tr>
+		<tr>
+			<th colspan="4" id="hide"> </th>
+			<td id="hide1" >CGST</td>
+			<td id="show">16,250.00</td>
+		</tr
+		<tr>
+			<th colspan="4" id="hide"> </th>
+			<td id="hide1" >SGST</td>
+			<td id="show">16,250.00</td>
+		</tr>
+		<tr>
+			<th colspan="4" id="hide"> </th>
+			<td id="hide1" ><b>Total</b></td>
+			<td id="show">1,57,500.00</td>
+		</tr>
+		</table>
+		<footer>
+			<input type="submit" name="submit" onclick="myFunction()">
+		</footer>
+	
+	
+	
+	
+</div>
+</form>
+</body>
+
+</html>
